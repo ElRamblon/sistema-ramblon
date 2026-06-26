@@ -37,8 +37,9 @@ sistema-ramblon/
 │   ├── nftables/
 │   └── docs/
 └── docs/
+```
 ## Módulos del sistema
 
-- **Reservas:** los clientes registran, modifican y cancelan reservas de forma autónoma
-- **Membresía:** cuenta personal con beneficios diferenciados
-- **Administración:** panel con roles (Administrador, Encargado, Personal, Cliente)
+- Reservas: los clientes registran, modifican y cancelan reservas de forma autónoma
+- Membresía: cuenta personal con beneficios diferenciados
+- Administración: panel con roles (Administrador, Encargado, Personal, Cliente)
