@@ -16,9 +16,9 @@ Sistema web de gestión para restaurante — reservas, membresías y administrac
 | Federico | Backend & Sociología |
 | Marcos | Sistemas Operativos, Ciberseguridad & DevOps |
 
-## Estructura del proyecto
+## Estructura del Proyecto
 
-\`\`\`
+```text
 sistema-ramblon/
 ├── frontend/
 │   ├── html/
@@ -37,7 +37,6 @@ sistema-ramblon/
 │   ├── nftables/
 │   └── docs/
 └── docs/
-\`\`\`
 
 ## Módulos del sistema
 
