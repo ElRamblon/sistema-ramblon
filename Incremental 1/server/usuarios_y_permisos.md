@@ -18,7 +18,6 @@
 
 ## Comandos utilizados
 
-\`\`\`bash
 sudo groupadd administradores
 sudo groupadd desarrolladores
 sudo groupadd basedatos
@@ -39,4 +38,4 @@ sudo chmod -R 755 /var/www/ramblon
 
 sudo chown -R dbadmin:basedatos /var/backups/ramblon
 sudo chmod -R 750 /var/backups/ramblon
-\`\`\`
+
