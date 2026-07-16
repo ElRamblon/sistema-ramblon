@@ -6,10 +6,11 @@ include("conexion.php");
     try{
     $n = $_POST['nombre'];
     $a = $_POST['contrasena'];
+    $z = $_POST['rol'];
     
 
-    $stmt = $con->prepare("INSERT INTO crud(nombre,contrasena) VALUES (?,?)");
-    $stmt->execute([$n,$a]);
+    $stmt = $con->prepare("INSERT INTO crud(nombre,contrasena,rol) VALUES (?,?,?)");
+    $stmt->execute([$n,$a,$z]);
 
 
     echo json_encode(["exito"=>true]);
