@@ -8,14 +8,26 @@
 </head>
 <body>
     <h1>Nuevo Empleado</h1>
-        <form id="f">
-            <label>cree un nombre de usuario</label>
-            <input type="text" name="nombre">
-            <label>cree una contrasena</label>
-            <input type="password" name="contrasena">
-            <input type="submit">
-        </form>
 
+    <form id="f">
+        <label>cree un nombre de usuario</label>
+        <input type="text" name="nombre">
+
+        <label>cree una contrasena</label>
+        <input type="password" name="contrasena">
+
+        <button type="button" onclick="document.getElementById('opciones').style.display='block'">
+            Rol
+        </button>
+
+        <div id="opciones" style="display:none; margin-top:10px;">
+            <button type="button" onclick="document.getElementById('rol').value='adm'">adm</button>
+            <button type="button" onclick="document.getElementById('rol').value='emp'">emp</button>
+        </div>
+
+        <input type="hidden" id="rol" name="rol">
+        <input type="submit">
+    </form>
 
     <div id="admin1"></div>
     <script src="registrarPersonal.js"></script>
