@@ -22,7 +22,7 @@ form.addEventListener('submit', async (event) => {
         if (datos.rol === "adm" || datos.rol === "admin") {
             location.href = "admin.html";
         } else {
-            location.href = "usuario.html";
+            location.href = "Usuario.html";
         }
     })
     .catch(error => {
