@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registrarse.css">
+    <link rel="stylesheet" href="../../css/registrarse.css">
     <title>Registro</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
  
       <!-- Icono de persona -->
       <div class="persona">
-        <img class="icon-lock" src="person.svg" alt="Registro">
+        <img class="icon-lock" src="../../css/img/person.svg" alt="Registro">
       </div>
  
       <!-- Título -->
@@ -27,6 +27,21 @@
  
     
       <form id="registrarse">
+        <div class="form-datos">
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Introduce tu nombre" required>
+        </div>
+
+        <div class="form-datos">
+            <label>Apellido</label>
+            <input type="text" name="apellido" placeholder="Introduce tu apellido" required>
+        </div>
+
+        <div class="form-datos">
+            <label>Teléfono</label>
+            <input type="text" name="telefono" placeholder="Introduce tu teléfono" required>
+        </div>
+
         <div class="form-datos">
             <label>Correo Electrónico</label>
             <input type="text" name="email" placeholder="Introduce tu correo" required>
@@ -46,7 +61,7 @@
  
       <!-- Volver al inicio -->
       <p class="volver-inicio">
-        Volver a la página principal de <a href="index.html">El Ramblón</a>
+        Volver a la página principal de <a href="../index.html">El Ramblón</a>
       </p>
  
     </div>
@@ -55,6 +70,6 @@
 </section>
 
 <div id="asd2"></div>
-<script src="registrarse.js"></script>
+<script src="../../js/registrarse.js"></script>
 </body>
 </html>

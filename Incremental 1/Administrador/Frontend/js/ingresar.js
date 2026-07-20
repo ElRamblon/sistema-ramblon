@@ -1,12 +1,17 @@
-const form = document.getElementById('g');
-const div = document.getElementById('mensaje');
+// Maneja el formulario de login del personal.
+// Segun el rol que devuelve el php, manda a una pagina o a otra.
+
+const form = document.getElementById('g');      // el formulario
+const div = document.getElementById('mensaje'); // donde se muestra el mensaje
 
 form.addEventListener('submit', async (event) => {
+    // Frena el envio normal del formulario, que recargaria la pagina.
     event.preventDefault();
 
+    // Junta todos los campos del formulario para mandarlos.
     const formData = new FormData(form);
 
-    fetch("ingresar.php", {
+    fetch("../../Backend/php/ingresar.php", {
         method: "POST",
         body: formData
     })
@@ -19,14 +24,17 @@ form.addEventListener('submit', async (event) => {
             return;
         }
 
-        if (datos.rol === "adm" || datos.rol === "admin") {
+        // Los dos niveles de acceso: el admin va al panel completo
+        // y el resto del personal (mozo y cocinero) a su propia pagina.
+        if (datos.rol === "admin") {
             location.href = "admin.html";
         } else {
             location.href = "Usuario.html";
         }
     })
+    // Entra aca si no se pudo hablar con el servidor.
     .catch(error => {
         console.error(error);
-        div.innerHTML = '<h3>Error en la conexin</h3>';
+        div.innerHTML = '<h3>Error en la conexion</h3>';
     });
 });

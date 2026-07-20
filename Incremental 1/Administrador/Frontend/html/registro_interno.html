@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registro_interno.css">
+    <link rel="stylesheet" href="../css/registro_interno.css">
     <title>Registro personal</title>
 </head>
 <body>
@@ -19,11 +19,11 @@
  
       <!-- Icono del admin -->
       <div class="admin">
-        <img class="icon-lock" src="admin.svg" alt="admin">
+        <img class="icon-lock" src="../css/img/admin.svg" alt="admin">
 
       </div>
  
-      <!-- Título -->
+      <!-- Titulo -->
       <h1>Panel Administrativo</h1>
  
       
@@ -35,23 +35,23 @@
  
         <!-- Campo donde va el correo -->
         <div class="form-datos">
-          <label for="Nombre">Nombre de Usuario *</label>
-          <input type="text" id="Nombre" name="nombre" placeholder="Ej: carlos_admin" required>
+          <label for="Nombre">Correo Electronico *</label>
+          <input type="email" id="Nombre" name="email" placeholder="Ej: carlos@elramblon.com" required>
         </div>
  
-        <!-- Campo donde va la contraseña -->
+        <!-- Campo donde va la contrasena -->
         <div class="form-datos">
-          <label for="password">Código de Autorización *</label>
+          <label for="password">Codigo de Autorizacion *</label>
           <input type="password" id="password" name="contrasena" placeholder="Introduce tu contraseña" required>
         
         
       <!-- tEXTO EXPLICATIVO 2 -->
-      <p class="texto-explicativo2"> Código numérico de 6 dijitos  </p>
+      <p class="texto-explicativo2"> Codigo numerico de 6 dijitos  </p>
  
         </div>
  
  
-        <!-- Botón de acceso -->
+        <!-- Boton de acceso -->
         <button type="submit" class="btn-acceso">VERIFICAR CREDENCIALES</button>
  
       </form>
@@ -63,7 +63,7 @@
 </section>
 
 
-<div class="mensaje"></div>
-<script src="ingresar.js"></script>
+<div class="mensaje" id="mensaje"></div>
+<script src="../js/ingresar.js"></script>
 </body>
 </html>
